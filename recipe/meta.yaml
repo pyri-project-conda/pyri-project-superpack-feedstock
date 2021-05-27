@@ -39,7 +39,7 @@ requirements:
     - pyyaml
     - py-opencv
     - robotraconteur_companion_python
-    - python>=3.8
+    - python >=3.8
     - numpy
     - pip
     - qpsolvers
@@ -74,7 +74,7 @@ requirements:
     - pyyaml
     - py-opencv
     - robotraconteur_companion_python
-    - python
+    - python >=3.8
     - numpy
     - pip
     - qpsolvers

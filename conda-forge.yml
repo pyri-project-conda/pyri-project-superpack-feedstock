@@ -15,3 +15,6 @@ provider:
 github_actions:
   upload_packages: False
   store_build_artifacts: True
+  settings_win:
+    variables: 
+      CONDA_BLD_PATH: D:\bld\
