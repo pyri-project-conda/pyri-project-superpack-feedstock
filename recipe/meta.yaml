@@ -1,0 +1,116 @@
+package:
+  name: pyri-robotics-superpack
+  version: 0.1.0dev0
+
+source:
+  - git_url: https://github.com/pyri-project/pyri-common
+    folder: pyri-common
+  - git_url: https://github.com/pyri-project/pyri-variable-storage
+    folder: pyri-variable-storage
+  - git_url: https://github.com/pyri-project/pyri-device-manager
+    folder: pyri-device-manager
+  - git_url: https://github.com/pyri-project/pyri-devices-states
+    folder: pyri-devices-states
+  - git_url: https://github.com/pyri-project/pyri-sandbox
+    folder: pyri-sandbox
+  - git_url: https://github.com/pyri-project/pyri-webui-server
+    folder: pyri-webui-server
+  - git_url: https://github.com/pyri-project/pyri-webui-browser
+    folder: pyri-webui-browser
+  - git_url: https://github.com/pyri-project/pyri-core
+    folder: pyri-core
+  - git_url: https://github.com/pyri-project/pyri-robotics
+    folder: pyri-robotics
+  - git_url: https://github.com/pyri-project/pyri-robotics-browser
+    folder: pyri-robotics-browser
+  - git_url: https://github.com/pyri-project/pyri-vision
+    folder: pyri-vision
+  - git_url: https://github.com/pyri-project/pyri-vision-browser
+    folder: pyri-vision-browser
+  - git_url: https://github.com/pyri-project/pyri-program-master
+    folder: pyri-program-master
+  - git_url: https://github.com/johnwason/pyri-scripts
+    folder: scripts
+
+requirements:
+  host:
+    - robotraconteur
+    - robotraconteur_companion
+    - pyyaml
+    - py-opencv
+    - robotraconteur_companion_python
+    - python
+    - numpy
+    - pip
+    - qpsolvers
+    - nodejs==14.15.4
+    - yamale
+    - appdirs
+    - netifaces
+    - pytest
+    - pytest-asyncio
+    - pytest-mock
+    - sanic
+    - asgiref
+    - scipy
+    - sqlalchemy
+    - shapely
+    - toppra
+    - restrictedpython
+    - setuptools
+    - wheel
+    - requests
+    - packaging
+    - general_robotics_toolbox
+
+  run:
+    - robotraconteur
+    - robotraconteur_companion
+    - pyyaml
+    - py-opencv
+    - robotraconteur_companion_python
+    - python
+    - numpy
+    - pip
+    - qpsolvers
+    - nodejs==14.15.4
+    - yamale
+    - appdirs
+    - netifaces
+    - pytest
+    - pytest-asyncio
+    - pytest-mock
+    - sanic
+    - asgiref
+    - scipy
+    - sqlalchemy
+    - shapely
+    - toppra
+    - restrictedpython
+    - setuptools
+    - wheel
+    - requests
+    - packaging
+    - general_robotics_toolbox
+
+build:
+  entry_points:
+    - pyri-core = pyri.core.__main__:main
+    - pyri-device-manager-service = pyri.device_manager.__main__:main
+    - pyri-devices-states-service = pyri.devices_states.__main__:main
+    - pyri-program-master-service = pyri.program_master.__main__:main
+    - pyri-sandbox-service = pyri.sandbox.__main__:main
+    - pyri-variable-storage-service = pyri.variable_storage.__main__:main
+    - pyri-webui-server = pyri.webui_server.__main__:main
+    - pyri-robotics-jog-service = pyri.robotics.robotics_jog_service.__main__:main
+    - pyri-robotics-motion-service = pyri.robotics.robotics_motion_service.__main__:main
+    - pyri-vision-aruco-detection-service = pyri.vision.aruco_detection_service.__main__:main
+    - pyri-vision-camera-calibration-service = pyri.vision.camera_calibration_service.__main__:main
+    - pyri-vision-camera-viewer-service = pyri.vision.camera_viewer_service.__main__:main
+    - pyri-vision-robot-calibration-service = pyri.vision.robot_calibration_service.__main__:main
+    - pyri-vision-template-matching-service = pyri.vision.template_matching.__main__:main
+
+about:
+  home: http://pyri.tech
+  license: Apache 2.0
+  summary: "PyRI Teach Pendant Robotics Super Pack"
