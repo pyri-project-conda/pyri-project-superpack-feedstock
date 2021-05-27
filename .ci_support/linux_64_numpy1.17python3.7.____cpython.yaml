@@ -1,7 +1,7 @@
 cdt_name:
 - cos6
 channel_sources:
-- conda-forge,robotraconteur
+- conda-forge,robotraconteur,pyri-project
 channel_targets:
 - pyri-project main
 docker_image:
