@@ -39,7 +39,7 @@ requirements:
     - pyyaml
     - py-opencv
     - robotraconteur_companion_python
-    - python
+    - python>=3.8
     - numpy
     - pip
     - qpsolvers
@@ -62,6 +62,11 @@ requirements:
     - requests
     - packaging
     - general_robotics_toolbox
+    - ninja # [win]
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+    - make # [linux]
+    - cmake
 
   run:
     - robotraconteur
