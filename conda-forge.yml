@@ -1,1 +1,17 @@
-{}
+github:
+  user_or_org: pyri-project
+
+channels:
+  targets:
+    - pyri-project main
+
+provider:
+  linux: github_actions
+  osx: github_actions
+  win: github_actions
+  linux_aarch64: None
+  linux_ppc64le: None
+
+github_actions:
+  upload_packages: False
+  store_build_artifacts: True
