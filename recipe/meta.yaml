@@ -1,6 +1,6 @@
 package:
   name: pyri-robotics-superpack
-  version: 0.1.0dev0
+  version: 0.1.0dev1
 
 source:
   - git_url: https://github.com/pyri-project/pyri-common
@@ -39,7 +39,7 @@ requirements:
     - pyyaml
     - py-opencv
     - robotraconteur_companion_python
-    - python >=3.8
+    - python
     - numpy
     - pip
     - qpsolvers
@@ -74,7 +74,7 @@ requirements:
     - pyyaml
     - py-opencv
     - robotraconteur_companion_python
-    - python >=3.8
+    - python
     - numpy
     - pip
     - qpsolvers
@@ -99,6 +99,7 @@ requirements:
     - general_robotics_toolbox
 
 build:
+  skip: true # [py<38]
   entry_points:
     - pyri-core = pyri.core.__main__:main
     - pyri-device-manager-service = pyri.device_manager.__main__:main

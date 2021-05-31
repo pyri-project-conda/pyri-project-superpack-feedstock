@@ -13,30 +13,30 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - CONFIG: linux_64_numpy1.17
-            SHORT_CONFIG: linux_64_numpy1.17
+          - CONFIG: linux_64_numpy1.17python3.8.____cpython
+            SHORT_CONFIG: linux_64_numpy1.17python3.8.____cpython
             UPLOAD_PACKAGES: False
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-comp7
             os: ubuntu
-          - CONFIG: linux_64_numpy1.19
-            SHORT_CONFIG: linux_64_numpy1.19
+          - CONFIG: linux_64_numpy1.19python3.9.____cpython
+            SHORT_CONFIG: linux_64_numpy1.19python3.9.____cpython
             UPLOAD_PACKAGES: False
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-comp7
             os: ubuntu
-          - CONFIG: win_64_numpy1.17
-            SHORT_CONFIG: win_64_numpy1.17
+          - CONFIG: win_64_numpy1.17python3.8.____cpython
+            SHORT_CONFIG: win_64_numpy1.17python3.8.____cpython
             UPLOAD_PACKAGES: False
             os: windows
-          - CONFIG: win_64_numpy1.19
-            SHORT_CONFIG: win_64_numpy1.19
+          - CONFIG: win_64_numpy1.19python3.9.____cpython
+            SHORT_CONFIG: win_64_numpy1.19python3.9.____cpython
             UPLOAD_PACKAGES: False
             os: windows
-          - CONFIG: osx_64_numpy1.17
-            SHORT_CONFIG: osx_64_numpy1.17
+          - CONFIG: osx_64_numpy1.17python3.8.____cpython
+            SHORT_CONFIG: osx_64_numpy1.17python3.8.____cpython
             UPLOAD_PACKAGES: False
             os: macos
-          - CONFIG: osx_64_numpy1.19
-            SHORT_CONFIG: osx_64_numpy1.19
+          - CONFIG: osx_64_numpy1.19python3.9.____cpython
+            SHORT_CONFIG: osx_64_numpy1.19python3.9.____cpython
             UPLOAD_PACKAGES: False
             os: macos
     steps:
@@ -101,7 +101,6 @@ jobs:
         CI: github_actions
         UPLOAD_PACKAGES: ${{ matrix.UPLOAD_PACKAGES }}
         BINSTAR_TOKEN: ${{ secrets.BINSTAR_TOKEN }}
-        CONDA_BLD_PATH: D:\bld\
       if: matrix.os == 'windows'
     - name: Prepare conda build artifacts
       id: prepare-artifacts

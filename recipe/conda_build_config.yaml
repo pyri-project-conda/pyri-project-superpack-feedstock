@@ -2,6 +2,4 @@ channel_sources:
   - conda-forge,robotraconteur,pyri-project
 channel_targets:
   - pyri-project main
-python:
-  - 3.8.* *_cpython
-  - 3.9.* *_cpython
+  
