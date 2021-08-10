@@ -13,7 +13,8 @@ provider:
   linux_ppc64le: None
 
 github_actions:
-  upload_packages: False
+  upload_packages: True
+  upload_on_branch: master
   store_build_artifacts: True
   settings_win:
     variables: 
