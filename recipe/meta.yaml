@@ -116,6 +116,22 @@ build:
     - pyri-vision-robot-calibration-service = pyri.vision.robot_calibration_service.__main__:main
     - pyri-vision-template-matching-service = pyri.vision.template_matching.__main__:main
 
+test:
+  commands:
+    - pyri-variable-storage-service --version
+    - pyri-sandbox-service --version
+    - pyri-device-manager-service --version
+    - pyri-devices-states-service --version
+    - pyri-program-master-service --version
+    - pyri-robotics-jog-service --version
+    - pyri-robotics-motion-service --version
+    - pyri-vision-aruco-detection-service --version
+    - pyri-vision-camera-calibration-service --version
+    - pyri-vision-camera-viewer-service --version
+    - pyri-vision-robot-calibration-service --version
+    - pyri-vision-template-matching-service --version
+    - pyri-webui-server --version
+
 about:
   home: http://pyri.tech
   license: Apache 2.0
