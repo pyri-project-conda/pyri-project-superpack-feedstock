@@ -1,6 +1,6 @@
 package:
   name: pyri-robotics-superpack
-  version: 0.1.0dev2
+  version: 0.1.0dev3
 
 source:
   - git_url: https://github.com/pyri-project/pyri-common
