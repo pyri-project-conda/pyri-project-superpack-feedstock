@@ -1,6 +1,6 @@
 package:
   name: pyri-robotics-superpack
-  version: 0.1.0dev3
+  version: 0.1.0dev4
 
 source:
   - git_url: https://github.com/pyri-project/pyri-common
@@ -50,7 +50,7 @@ requirements:
     - pytest
     - pytest-asyncio
     - pytest-mock
-    - sanic
+    - sanic=20.12.2
     - asgiref
     - scipy
     - sqlalchemy
