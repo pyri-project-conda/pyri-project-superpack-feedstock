@@ -33,16 +33,41 @@ conda config --add channels p
 conda config --set channel_priority strict
 ```
 
-Once the `p` channel has been enabled, `pyri-robotics-superpack` can be installed with:
+Once the `p` channel has been enabled, `pyri-robotics-superpack` can be installed with `conda`:
 
 ```
 conda install pyri-robotics-superpack
 ```
 
-It is possible to list all of the versions of `pyri-robotics-superpack` available on your platform with:
+or with `mamba`:
+
+```
+mamba install pyri-robotics-superpack
+```
+
+It is possible to list all of the versions of `pyri-robotics-superpack` available on your platform with `conda`:
 
 ```
 conda search pyri-robotics-superpack --channel p
+```
+
+or with `mamba`:
+
+```
+mamba search pyri-robotics-superpack --channel p
+```
+
+Alternatively, `mamba repoquery` may provide more information:
+
+```
+# Search all versions available on your platform:
+mamba repoquery search pyri-robotics-superpack --channel p
+
+# List packages depending on `pyri-robotics-superpack`:
+mamba repoquery whoneeds pyri-robotics-superpack --channel p
+
+# List dependencies of `pyri-robotics-superpack`:
+mamba repoquery depends pyri-robotics-superpack --channel p
 ```
 
 
